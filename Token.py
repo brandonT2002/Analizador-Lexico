@@ -1,3 +1,22 @@
+# --Tokens--
+# formulario
+# ~
+# >
+# <
+# :
+# ,
+# [
+# ]
+# tipo
+# valor
+# fondo
+# nombre
+# valores
+# evento
+# <EVENTO>
+# "valores"
+# 'valores'
+
 class Token:
     def __init__(self,tipo,buffer,linea,columna):
         self.tipo = tipo
