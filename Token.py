@@ -13,7 +13,8 @@
 # nombre
 # valores
 # evento
-# <EVENTO>
+# entrada
+# info
 # "valores"
 # 'valores'
 
