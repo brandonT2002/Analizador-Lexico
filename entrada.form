@@ -10,12 +10,12 @@ formulario ~>> [
     >,
     <
         tipo: "grupo-radio",
-        nombre: "sexo",
+        nombre: "Sexo:",
         valores: ['Masculino','Femenino']
     >,
     <
         tipo: "grupo-option",
-        nombre: "pais",
+        nombre: "Pais:",
         valores: ['Guatemala','El Salvador','Honduras']
     >,
     <
