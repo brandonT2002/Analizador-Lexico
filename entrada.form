@@ -1,26 +1,36 @@
 formulario ~>> [
-    <
+    <()=/
         tipo: "etiqueta",
-        valor: "Nombre:"
+        valor: "Primer Proyecto"
     >,
     <
         tipo: "texto",
-        valor: "Nombre",
-        fondo: "Ingrese nombre"
+        valor: "",
+        fondo: "Ingrese Nombre"
+    >,
+    <
+        tipo: "texto",
+        valor: "",
+        fondo: "Ingrese Apellido"
     >,
     <
         tipo: "grupo-radio",
-        nombre: "sexo",
-        valores: ['Masculino','Femenino']
+        valor: "Avance del Proyecto",
+        valores: ['20 %','40 %','60 %','80 %','100 %']
     >,
     <
         tipo: "grupo-option",
-        nombre: "pais",
-        valores: ['Guatemala','El Salvador','Honduras']
+        valor: "Estado de Entrega",
+        valores: ['Entregado','Pendiente']
+    >
+    <
+        tipo: "boton",
+        valor: "Evento Entrada",
+        evento: entrada
     >,
     <
         tipo: "boton",
-        valor: "Valor",
+        valor: "Evento Info",
         evento: info
     >
 ]

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="An example pen showing how a basic CSS Grid container can create a nice, responsive card layout.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <form class="form">
+        <div class="card">
+            <img class="card__img" src="https://visme.co/blog/wp-content/uploads/2019/11/Header-9.jpg" alt="banner">
+            <div class="card__content">
+                <h1 class="card__header">Formulario</h1>
+                <label for="text" class="text1">Nombre:</label>
+                <div class="container-fields">
+                    <div class="field">
+                        <input id="Nombre" type="text" placeholder="Ingrese nombre" value="Brandon">
+                    </div>
+                </div>
+                <div class="columns container-fields">
+                    <label for="text" class="text1">Sexo:</label>
+                    <div class="radio-list">
+                        <label class="radio">
+                            <input class="radio-input" type="radio" name="radio">
+                            <span class="radio-checkmark-box">
+                                <span class="radio-checkmark"></span>
+                            </span>
+                            <label for="" class="text">Masculino</label>
+                        </label>
+                        
+                        <label class="radio">
+                            <input class="radio-input" type="radio" name="radio">
+                            <span class="radio-checkmark-box">
+                                <span class="radio-checkmark"></span>
+                            </span>
+                            <label for="" class="text">Femenino</label>
+                        </label>
+                    </div>
+                </div>
+                <div class="container-flieds">
+                    <form action="" method="">
+                        <label for="text" class="text1">Pais:</label>
+                        <select id="action" class="selectForm field" name="status">
+                            <option disabled="" selected="" cl="">Seleccione un Pais</option>
+                            <option class="item">Guatemala</option>
+                            <option class="item">El Salvador</option>
+                            <option class="item">Honduras</option>
+                        </select>
+                    </form>
+                </div>
+                <button id="info" class="card__btn">Información <span>&rarr;</span></button>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

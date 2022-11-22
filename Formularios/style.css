@@ -1,0 +1,238 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  background-color: #f5f5f5;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 1.5rem;
+  font-family: "Inter", sans-serif;
+}
+h4{
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.7;
+  color: #3d3d3d;
+}
+@media (max-width: 60em) {
+  body {
+    padding: 3rem;
+  }
+}
+.form {
+  background-color: #fff;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  transition: 0.2s;
+}
+.form:hover {
+  transform: translateY(-0.5%);
+  box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.2);
+}
+.card__img {
+  display: block;
+  width: 100%;
+  height: 18rem;
+  object-fit: cover;
+}
+.card__content {
+  padding: 3rem;
+}
+.card__header {
+  font-size: 3rem;
+  font-weight: 500;
+  color: #0d0d0d;
+  margin-bottom: 1.5rem;
+}
+.card__text {
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.7;
+  color: #3d3d3d;
+  margin-bottom: 2.5rem;
+}
+.text {
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.7;
+  color: #3d3d3d;
+}
+.text1 {
+  margin-top: 1rem;
+  font-size: 1.7rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.7;
+  color: #3d3d3d;
+}
+.card__btn {
+  display: block;
+  width: 100%;
+  margin-top: 1rem;
+  padding: 1.5rem;
+  font-size: 2rem;
+  text-align: center;
+  color: #22338d;
+  background-color: #5469d466;
+  border: none;
+  border-radius: 0.4rem;
+  transition: 0.2s;
+  cursor: pointer;
+}
+.card__btn span {
+  margin-left: 1rem;
+  transition: 0.2s;
+}
+.card__btn:hover, .card__btn:active {
+  background-color: #dce4ff;
+}
+.card__btn:hover span, .card__btn:active span {
+  margin-left: 1.5rem;
+}
+.field{
+  margin-bottom: 1.5rem;
+}
+.field input {
+  font-size: 16px;
+  line-height: 28px;
+  padding: 8px 16px;
+  width: 100%;
+  min-height: 44px;
+  border: 1.5px solid #58a55a;
+  border-radius: 4px;/*#6340ffb0*/
+  outline-color: rgb(84 105 212 / 0.5);
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(60, 66, 87, 0.16) 0px 0px 0px 1px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px,
+    rgba(0, 0, 0, 0) 0px 0px 0px 0px;
+}
+/*
+@media (min-width: 768px) {
+    .container-fields{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto auto 2rem;
+        column-gap: 1rem;
+    }
+
+    .field:nth-child(3),
+    .field:nth-child(4){
+        grid-column: 1 / 3;
+    }
+}
+*/
+/*---------- Group Radio Button -----------*/
+@media (min-width: 768px) {
+  .columns{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 1.6rem;
+  }
+  .radio-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 5rem;
+    column-gap: 2rem;
+  }
+}
+.radio {
+  display: flex;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+}
+.radio:hover .checkbox-checkmark {
+  border: 2px solid #5469d4;
+}  
+.radio-input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.radio-input:focus ~ .radio-checkmark-box {
+  border-color: #5469d4;
+}
+.radio-input:checked ~ .radio-checkmark-box .radio-checkmark:after {
+  display: block;
+}
+.radio-input:checked ~ .radio-checkmark-box .radio-checkmark {
+  background-color: #5469d4;
+  border: 2px solid #5469d4;
+}
+.radio-input:disabled ~ .radio-checkmark-box .radio-checkmark {
+  border: 2px solid #b0b0b0;
+  cursor: not-allowed;
+}
+.radio-input:disabled:checked ~ .radio-checkmark-box .radio-checkmark {
+  background-color: #b0b0b0;
+}
+.radio-input:disabled:checked ~ .radio-checkmark-box .radio-checkmark:after {
+  background: url("data:image/svg+xml,%3Csvg width='14' height='10' viewBox='0 0 14 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.8866 9.91722L0.0873348 5.36761C0.0596566 5.34137 0.037692 5.31018 0.0227039 5.27582C0.00771585 5.24146 0 5.20461 0 5.1674C0 5.13019 0.00771585 5.09335 0.0227039 5.05899C0.037692 5.02463 0.0596566 4.99343 0.0873348 4.96719L1.29893 3.81086C1.41471 3.70049 1.60183 3.70049 1.71761 3.81086L4.87718 6.80501C4.99296 6.91538 5.18143 6.91409 5.2972 6.80372L12.2787 0.0839022C12.3945 -0.0277526 12.5829 -0.0277526 12.7001 0.0826188L13.913 1.23895C14.0288 1.34932 14.0288 1.52771 13.9143 1.63809L6.30821 8.95468L6.30956 8.95597L5.30662 9.91722C5.19085 10.0276 5.00238 10.0276 4.8866 9.91722Z' fill='%2374767B'/%3E%3C/svg%3E%0A") no-repeat center;
+  background-size: contain;
+}  
+.radio-checkmark-box {
+  min-width: 3.6rem;
+  max-width: 3.6rem;
+  min-height: 3.6rem;
+  max-height: 3.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid transparent;
+  border-radius: 50%;
+}  
+.radio-checkmark {
+  min-width: 3rem;
+  max-width: 3rem;
+  min-height: 3rem;
+  max-height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid #58a55a;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.radio-checkmark:after {
+  content: "";
+  display: none;
+  background: url("data:image/svg+xml,%3Csvg width='14' height='10' viewBox='0 0 14 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4.8866 9.91722L0.0873348 5.36761C0.0596566 5.34137 0.037692 5.31018 0.0227039 5.27582C0.00771585 5.24146 0 5.20461 0 5.1674C0 5.13019 0.00771585 5.09335 0.0227039 5.05899C0.037692 5.02463 0.0596566 4.99343 0.0873348 4.96719L1.29893 3.81086C1.41471 3.70049 1.60183 3.70049 1.71761 3.81086L4.87718 6.80501C4.99296 6.91538 5.18143 6.91409 5.2972 6.80372L12.2787 0.0839022C12.3945 -0.0277526 12.5829 -0.0277526 12.7001 0.0826188L13.913 1.23895C14.0288 1.34932 14.0288 1.52771 13.9143 1.63809L6.30821 8.95468L6.30956 8.95597L5.30662 9.91722C5.19085 10.0276 5.00238 10.0276 4.8866 9.91722Z' fill='white'/%3E%3C/svg%3E%0A") no-repeat center;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-size: contain;
+}
+.align{
+  display: flex;
+  align-items: left;
+}
+/*------combo box------*/
+.selectForm {
+  font-size: 16px;
+  line-height: 28px;
+  padding: 8px 16px;
+  width: 100%;
+  min-height: 44px;
+  border: 1.5px solid #58a55a;
+  border-radius: 4px;
+  background-color: transparent;
+  outline: none;
+}
+.item{
+  color: #5469d4;
+}
