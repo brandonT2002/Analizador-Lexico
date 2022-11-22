@@ -15,7 +15,7 @@ Generador de formularios dinámicos en formato HTML mediante un analizador léxi
 | tipo | pr_tipo |
 | valor | pr_valor |
 | evento | pr_evento |
-| "etiqueta" | cadena |
-| 'etiqueta' | cadena |
+| "texto" | cadena |
+| 'texto' | cadena |
 | entrada | evento_entrada |
 | info | evento_info |
