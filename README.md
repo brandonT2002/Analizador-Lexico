@@ -1,8 +1,8 @@
 # Analizador Lexico
 Generador de formularios dinámicos en formato HTML mediante un analizador léxico.
 
-| Token             | Tipo    |
-|-------------------|-------------|
+| Token | Tipo |
+|-------|------|
 | ~ | virgulilla |
 | < | menor-que |
 | > | mayor-que |

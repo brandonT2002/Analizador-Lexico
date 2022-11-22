@@ -249,7 +249,7 @@ class AnalizadorLexico:
     def campoTexto(self,valor,fondo):
         return f"""        <div class="container-fields">
                     <div class="field">
-                        <input id="{valor.replace('"','')}" type="text" placeholder="{fondo.replace('"','')}">
+                        <input type="text" placeholder="{fondo.replace('"','')}" id="{valor.replace('"','')}">
                     </div>
                 </div>
         """
@@ -310,7 +310,7 @@ class AnalizadorLexico:
         """
 
     def boton(self,valor,evento):
-        return f"""        <button id="{valor.replace('"','')}" class="card__btn">{evento} <span>&rarr;</span></button>
+        return f"""        <button id="{evento}" class="card__btn">{valor.replace('"','')} <span>&rarr;</span></button>
         """
 
     def header(self) -> str:
